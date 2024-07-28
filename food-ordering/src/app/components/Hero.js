@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Pizza from "../assets/pizza..webp";
+import Right from "./Right";
 
 export default function Hero() {
 
@@ -24,9 +25,14 @@ export default function Hero() {
                     <p>Discover a world of mouthwatering pizzas with Foody! Whether you’re in the mood for a classic Margherita or an adventurous BBQ Chicken, we deliver hot and fresh pizzas right to your door. Enjoy a seamless ordering experience, real-time tracking, and unbeatable deals. Satisfy your pizza cravings with just a few taps!</p>
                 </div>
 
-                <div className="btn flex justify-center md:justify-start">
-                    <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-full">
+                <div className="btn flex gap-2 sm:gap-0 justify-center md:justify-start items-center">
+                    <button className="flex gap-2 bg-red-500 hover:bg-red-600 text-white sm:px-6 sm:py-3 px-2 py-1 rounded-full">
                         Order Now
+                        <Right />
+                    </button>
+                    <button className="flex hover:text-gray-700 flex gap-2 font-medium sm:px-6 sm:py-3 px-2 py-1 rounded-full">
+                        Learn More
+                        <Right />
                     </button>
                 </div>
             </div>
